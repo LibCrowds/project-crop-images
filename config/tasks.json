@@ -53,6 +53,43 @@
       }
     }
   },
+  
+      "transcribe_genres": {
+    "project": {
+      "namePrefix": "Transcribe Genres",
+      "description": "Transcribe the genres of the highlighted title",
+      "parent": "mark_titles"
+    },
+    "task": {
+      "mode": "transcribe",
+      "objective": "Transcribe the genre",
+      "guidance": "Type in the genre listed for the highlighted title. Terms like 'comedy' or 'melodrama' usually appear above or below the title. If you can't see a genre, leave it blank.",
+      "help": "",
+      "form": {
+        "model": {
+          "genre": ""
+        },
+        "schema": {
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "label": "Genre",
+              "model": "genre",
+              "placeholder": "Transcribe the genre"
+            }
+          ]
+        }
+      },
+      "bounds": {
+        "x": -200,
+        "y": 0,
+        "width": 400,
+        "height": 0
+      }
+    }
+},
+
 
   "transcribe_genres": {
     "project": {
